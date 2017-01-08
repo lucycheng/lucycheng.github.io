@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Lucille Cheng | Not-Portfolio Portfolio
+		</title>
+
+		 <meta name="description" content="Incoming techie @jpmorgan, formerly @medialab, @hceconomics and @freakonomics. Studying CS+Econ @Wellesley. Down to talk tech, food, jobs (shameless plug) ‒ or BYO topic!">
+	     <meta name="keywords" content="Lucy Cheng, Lucille Cheng, Portfolio, Web Design, Web Development, Wellesley College, wellesley, lucy">
+
+	     <link rel="stylesheet" type="text/css" href="site.css">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-2.0.0.min.js"></script>
+	</head>
+
+	<body>
+	<div id="wrapper">
+   			<div id="name">
+	   			<h1>
+	   			<table id = "nameLetters" > 
+	   				<tr>
+	   				<td id ="L">L</td>
+	   				<td id ="U">U</td>
+	   				<td id ="C">C</td>
+	   				<td id ="Y">Y</td>
+	   				<td class = "last"> CHENG </span>
+	   				<tr>
+	   			</table>
+	   			</h1>
+				<h2>
+					A twenty-something infographic enthusiast looking beyond the pictures and numbers to help the people they represent. 
+				</h2>
+			</div>
+
+
+			<div id ="summary">
+				<span class = "next" id="characters"> Tell us about yourself in <span id = "thirty">30 seconds </span> or less. </span>
+				<p><b>Currently</b> creating relationship products </b><a href = "https://www.linkedin.com">@linkedin</a>. <span class = "next">  Formerly building new cities <a href = "http://cp.media.mit.edu/city-simulation"> @medialab</a>, figuring out inequality <span class = "next"> <a href="https://hceconomics.uchicago.edu/"> @hceconomics</a> and all things freaky <a href = "https://twitter.com/freakonomics"> @freakonomics </a> with <a href = "https://bfi.uchicago.edu/people/steven-levitt"> this guy</a>. <span class="next"> Studied <b>computer science and economics</b><a href = "https://www.wellesley.edu"> @Wellesley</a>  <span class="next">by way of <a href = "https://www.buzzfeed.com/mattbellassai/reasons-chicago-is-second-to-no-city#3fozt22">Chicago's Southside</a>. Passionate about <span class = "next"> interaction design and looking to learn more about it.
+			</div>
+
+			<table id ="nav"> 
+	   				<tr>
+	   				<td id ="#EA5930" style="border: 0.5px solid #EA5930; color: #444">Freelance economy</td>
+	   				<td id ="#F8AF1E" style="border: 0.5px solid #F8AF1E; color: #444">Early childhood edu</td>
+	   				<td id ="#187780" style="border: 0.5px solid #187780; color: #444">Creating closeness</td>
+	   				<td id ="#888" style="border: 0.5px solid #999; color: #444">Visualizing cities</td>
+	   				<tr>
+	   			</table>
+
+	   		<div id = "content">
+	   			<div id = "profinder" class = "project">
+	   				<div class = "title">
+			   			<h1>
+			   			Launching LinkedIn's <span class = "next">answer to freelancers
+			   			</h1>
+
+			   			<h2>
+			   			LinkedIn ProFinder
+			   			</h2>
+			   		</div>
+			   		<img src = "profinder.svg">
+	   			</div>
+
+	   			<div id = "media" class = "project">
+	   				<div class = "title">
+		   				<h1>
+			   			Visualizing and creating new livable cities
+			   			</h1>
+
+			   			<h2>
+			   			Interactive Rapid Urbanization Visualization tool 
+			   			</h2>
+			   		</div>
+			   		<img src = "mitmedialab.svg">
+		   			
+	   			</div>
+
+	   			<div id = "checc" class = "project">
+	   				<div class = "title">
+		   				<h1>
+						Closing the early-childhood education inequalty gap	
+						</h1>
+
+			   			<h2>
+			   			Chicago Heights Early Childhood Center 
+			   			</h2>
+			   		</div>
+			   		<img src = "checc.svg">
+	   			</div>
+
+	   			<div id = "ldl" class = "project">
+	   				<div class = "title">
+		   				<h1>
+						Gamifying new relationships within a small community
+						</h1>
+
+			   			<h2>
+			   			Let's do Lunch
+			   			</h2>
+			   		</div>
+			   		<img src = "ldl.svg">
+
+	   			</div>
+
+	   			<div id = "default" class = "project">
+
+	   				<h1>
+					<b>Above </b> are four projects, the <b>presentation</b>of which was <b>inspired</b> by my preferred method of <b>visualizing</b> things: through <b>infographics</b>.   
+					</h1>
+	   			</div>
+
+
+
+	   		</div>
+				
+
+		   	<script>
+				$(document).ready(function() {
+
+					$(window).scroll(function () {
+					      //if you hard code, then use console
+					      //.log to determine when you want the 
+					      //nav bar to stick.  
+					      console.log($(window).scrollTop())
+					    if ($(window).scrollTop() > 530) {
+					      $('#nav').addClass('navbar-fixed');
+					    }
+					    if ($(window).scrollTop() < 530) {
+					      $('#nav').removeClass('navbar-fixed');
+					    }
+					  });
+
+					// var start = true;
+
+					// 	$('td').hover(function() {
+					// 	$(this).css('backgroundColor', this.id);
+					// 	}, function () {
+					// 	$(this).css('backgroundColor', '#fff');
+					// 	});
+					$('.project').css('display', 'none');
+					$('#default').css('display', 'block');
+
+	   				$('#content').css({
+	   								'height': '100px',
+	   							});
+					
+						$('#nav td').click(function() {
+	   						$(this).css({
+	   							'backgroundColor':this.id,
+	   							'color':'white'});
+	   						$('td').not(this).css({
+	   							'backgroundColor':'#fff',
+	   							'color':'#444'});
+	   						$('#content .title').css('backgroundColor',this.id);
+	   						$('#content').css({
+	   							'border-style':'solid',
+	   							'border-color':this.id,
+	   							'border-width':'0.5px'});
+
+	   						if (this.id == '#888') {
+	   							$('#media').show();
+	   							$('#content').css({
+	   								'height': '1500px'
+	   							});
+	   							$('.project').not('#media').hide();
+	   						} else if (this.id == '#F8AF1E') {
+	   							$('#checc').show();
+	   							$('#content').css({
+	   								'height': '1380px'
+	   							});
+	   							$('.project').not('#checc').hide();
+	   						} else if (this.id == '#187780') {
+	   							$('#ldl').show();
+	   							$('#content').css({
+	   								'height': '1950px',
+	   								'padding-bottom': '20px'
+	   							});
+	   							$('.project').not('#ldl').hide();
+	   						} else if (this.id == '#EA5930') {
+	   							$('#profinder').show();
+	   							$('#content').css({
+	   								'height': '1475px'
+	   							});
+	   							$('.project').not('#profinder').hide();
+	   						} else {
+	  							// all cases done
+	   						}
+						});
+
+						$('#name').click(function() {
+							$('#aboutMe').show();
+							$('.project').hide();
+							$('#content').css('border-width', '0px');
+							
+						});
+
+					function scrollToContent(){
+    					var aTag = $("a[name='"+ aid +"']");
+    					$('html,body').animate({scrollTop: aTag.offset().top},'slow');
+					}
+
+
+					// $('td').mouseover(function() {
+   		// 				$(this).css('backgroundColor', this.id);
+					// });
+
+					// $('td').mouseout(function() {
+   		// 				$(this).css('backgroundColor', '#fff');
+					// });
+
+				});
+			</script>
+
+			</div>
+		</div>
+	</body>
+</html>

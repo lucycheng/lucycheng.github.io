@@ -1,0 +1,151 @@
+html, body {
+				width: 100%;
+				font-family: Garamond;
+			}
+
+
+			#thirty {
+				color: #F8AF1E;
+			}
+
+			#summary {
+				width: 500px;
+				text-align: center;
+				margin: 0px auto;
+				border: 1px black solid;
+				padding: 5px;
+			}
+
+			#wrapper {
+  				width: 800px;
+   				margin: 0px auto;
+   				position:relative;
+   				background: #fff;
+   				z-index: 900;
+			}
+
+			#name { 
+				width: 600px;
+				margin: 0px auto;
+				text-align: center;
+				padding-top: 20px;
+			}
+
+			h1 {
+				font-family: "Century Gothic";
+				font-weight: 900;
+				font-size: 100px;
+			}
+
+			h2 {
+				font-family: "Garamond";
+				font-weight: 100;
+				margin-top:-70px;
+			}
+
+			#characters {
+			font-size: 25px;
+			padding-top: 10px;	
+			/*font-family: "AvenirLTStd-Light";			*/
+			}
+
+			.next {
+				display: block;
+			}
+
+			.last {
+				font-weight:100;
+			}
+
+			#interactive{font-family:"Arial"; padding-top:10px;}
+
+			svg {margin: 0px auto; display:block;margin-top: 50px; font-family: "Arial";}
+
+			#portfolio {width: 400px; padding-top: 20px;margin: 0px auto; padding-left: 40px;font-family: "Garamond"; font-size:20px; text-align: center;}
+			}
+
+			a:link, a[href^="mailto"], a[href^="https"], a[href^="http"] {
+				color:#BBB;
+			}
+
+			a:visited, a[href^="mailto"], a[href^="https"], a[href^="http"]  {
+				color: #187780;
+			}
+
+			a:hover {
+				color: #EA5930;
+			}
+
+			a { text-decoration: none;}
+
+			#nav { 
+				width: 100%;
+				margin: 0 auto;
+				text-align: center;
+				margin-top: 30px;
+			}
+
+			#nav td {
+				width: 200px;
+				margin: 15px;/*
+				background-color: gray;*/
+				height: 25px;
+				color: black;
+				font-family: "AvenirLTStd-Light";
+				font-size: 13px;
+			}
+
+#content {
+	width: 796px;
+	margin: 0 auto;
+	height: 1000px;
+	font-family: "AvenirLTStd-Light";
+	margin-bottom: 40px;
+}
+
+#content h1 {
+	text-align: center;
+	font-size: 35px;
+	font-family: "AvenirLTStd-Light";
+	width: 450px;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+#content h2 {
+	text-align: center;
+	margin-top: 5px;
+	font-size: 20px;
+	font-family: "AvenirLTStd-Light";
+	width: 100;
+	opacity: 0.75;
+}
+
+.navbar-fixed{
+    bottom: 0;
+    right: 0;
+    left:0;
+    z-index: 99999;
+  position: fixed;
+}
+
+.project img {
+	display: block;
+	margin: 0 auto;
+	width: 750px;
+}
+
+.title {
+	padding-bottom: 15px;
+	color: white;
+	margin-bottom: 15px;
+}
+
+#default h1 {
+	font-size: 20px;
+	font-weight: 100;
+}
+
+
+
+
