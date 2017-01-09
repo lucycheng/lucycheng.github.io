@@ -1,12 +1,13 @@
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('AvenirLTStd-Book.otf') format('otf');
+}
+
 html, body {
 				width: 100%;
 				font-family: Garamond;
 			}
-
-@font-face {
-	font-family: 'AvenirLTStd-Light';
-	src: url('AvenirLTStd-Book.otf') format('otf');
-}
 
 
 			#thirty {
@@ -51,7 +52,6 @@ html, body {
 			#characters {
 			font-size: 25px;
 			padding-top: 10px;	
-			/*font-family: "AvenirLTStd-Light";			*/
 			}
 
 			.next {
@@ -96,7 +96,7 @@ html, body {
 				background-color: gray;*/
 				height: 25px;
 				color: black;
-				font-family: "AvenirLTStd-Light";
+				font-family: "Avenir";
 				font-size: 13px;
 			}
 
@@ -104,14 +104,14 @@ html, body {
 	width: 796px;
 	margin: 0 auto;
 	height: 1000px;
-	font-family: "AvenirLTStd-Light";
+	font-family: "Avenir";
 	margin-bottom: 40px;
 }
 
 #content h1 {
 	text-align: center;
 	font-size: 35px;
-	font-family: "AvenirLTStd-Light";
+	font-family: "Avenir";
 	width: 450px;
 	margin: 0 auto;
 	padding-top: 20px;
@@ -121,7 +121,7 @@ html, body {
 	text-align: center;
 	margin-top: 5px;
 	font-size: 20px;
-	font-family: "AvenirLTStd-Light";
+	font-family: "Avenir";
 	width: 100;
 	opacity: 0.75;
 }
