@@ -115,6 +115,7 @@ html, body {
 	width: 450px;
 	margin: 0 auto;
 	padding-top: 20px;
+	font-weight: 100;
 }
 
 #content h2 {
