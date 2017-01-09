@@ -3,6 +3,11 @@ html, body {
 				font-family: Garamond;
 			}
 
+@font-face {
+	font-family: 'AvenirLTStd-Light';
+	src: url('AvenirLTStd-Book.otf') format('otf');
+}
+
 
 			#thirty {
 				color: #F8AF1E;
